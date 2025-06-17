@@ -1,0 +1,5 @@
+service : {
+  check_status : () -> (text) query;
+  create_bill : (nat64, vec text) -> (text);
+  pay_bill : (text) -> (text);
+}

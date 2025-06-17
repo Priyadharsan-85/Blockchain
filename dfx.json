@@ -1,0 +1,31 @@
+{
+  "canisters": {
+    "hackproj_backend": {
+      "candid": "src/hackproj_backend/hackproj_backend.did",
+      "package": "hackproj_backend",
+      "type": "rust"
+    },
+    "hackproj_frontend": {
+      "dependencies": [
+        "hackproj_backend"
+      ],
+      "source": [
+        "src/hackproj_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hackproj_frontend"
+    },
+    "internet_identity": {
+        "id":  "rdmx6-jaaaa-aaaaa-aaadq-cai",
+        "type": "pull"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
